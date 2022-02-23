@@ -1,0 +1,18 @@
+.main-logo {
+  display: flex;
+  justify-content: center;
+  background-color: #02a89e;
+}
+
+.main-logo {
+  padding: 30px 0px 0px 0px;
+}
+
+.fad-color {
+  height: 30px;
+  background: linear-gradient(
+    0deg,
+    rgba(var(--bs-light-rgb)) 0%,
+    rgba(2, 168, 158, 1) 90%
+  );
+}

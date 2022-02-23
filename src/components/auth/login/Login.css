@@ -1,0 +1,32 @@
+.main-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #02a89e;
+}
+
+.login-img {
+  margin-bottom: 3%;
+}
+
+.login-form {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 4%;
+  background-color: white;
+  margin-bottom: 7%;
+  width: 380px;
+}
+
+.submit-login {
+  display: flex;
+  justify-content: center;
+}
+
+.signUpLink {
+  display: flex;
+  justify-content: center;
+  margin-top: 7%;
+  font-size: 0.75em;
+  text-decoration: none;
+}

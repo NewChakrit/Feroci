@@ -1,0 +1,30 @@
+.main-register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #02a89e;
+}
+
+.main-register h1 {
+  color: white;
+  text-shadow: 5px 5px 10px gray;
+  margin: 5%;
+}
+
+.submit-register {
+  display: flex;
+  justify-content: center;
+}
+
+.submit-register button {
+  margin-top: 2%;
+}
+
+.register-form {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 4%;
+  background-color: white;
+  margin-bottom: 7%;
+  width: 500px;
+}

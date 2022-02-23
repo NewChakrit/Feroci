@@ -1,0 +1,23 @@
+.form-row {
+  display: flex;
+}
+
+.custom-select {
+  width: 95%;
+  background-color: rgb(245, 238, 238);
+}
+
+.main-audition-form {
+  margin: 3%;
+  padding: 2%;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.main-audition-form h2 {
+  text-align: center;
+}
+
+.option-instrument {
+  background: white;
+}

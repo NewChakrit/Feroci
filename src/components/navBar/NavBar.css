@@ -1,0 +1,18 @@
+.nav-item a {
+  text-decoration: none !important;
+}
+.navbar-nav {
+  width: 80%;
+  justify-content: space-around;
+}
+
+.singout {
+  display: flex;
+  flex-direction: row-reverse;
+
+  width: 20%;
+}
+
+#navbar {
+  overflow: hidden;
+}

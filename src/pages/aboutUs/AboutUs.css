@@ -1,0 +1,22 @@
+.aboutus-main {
+  margin: 4% 4% 4% 4%;
+}
+
+.aboutus-img {
+  display: flex;
+  justify-content: center;
+  margin: 3% 3%;
+}
+
+.aboutus-img img {
+  width: 80%;
+  height: 80%;
+  border-radius: 5%;
+  box-shadow: 19px 18px 14px -1px rgba(54, 54, 54, 0.7);
+  -webkit-box-shadow: 19px 18px 14px -1px rgba(54, 54, 54, 0.7);
+  -moz-box-shadow: 19px 18px 14px -1px rgba(54, 54, 54, 0.7);
+}
+
+.aboutus-title {
+  padding-top: 20px;
+}

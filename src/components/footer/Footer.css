@@ -1,0 +1,127 @@
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 200px;
+  box-shadow: inset 0 20px 10px -16px gray;
+  background: white;
+}
+
+.contact-footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 51px;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 150px;
+  width: 500px;
+  background: transparent;
+}
+.contact-tel {
+  background: transparent;
+  margin-top: 10px;
+  height: 35px;
+}
+
+.contact-address {
+  background: transparent;
+}
+.contact-title {
+  font-size: 1.5 rem;
+  background: transparent;
+  width: 100%;
+  text-align: center;
+}
+.contact-title strong {
+  background: transparent;
+}
+
+.community-footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  margin-bottom: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 150px;
+  width: 500px;
+  background: transparent;
+}
+
+.community-title {
+  display: flex;
+  justify-content: center;
+
+  color: #3a3a3a;
+}
+
+.community-app-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  font-size: 50px;
+  width: 100%;
+  background: transparent;
+}
+
+.community-app-logo a {
+  background: transparent;
+}
+.logo {
+  background: transparent;
+}
+svg {
+  background: transparent;
+  color: #ef5da8;
+}
+.contact-title strong {
+  color: #3a3a3a;
+}
+
+.contact-address p {
+  color: #3a3a3a;
+}
+
+.hr-div {
+  display: flex;
+  justify-content: center;
+}
+
+.hr-footer {
+  align-items: center;
+  border: 1px solid;
+  width: 93.3%;
+}
+
+.sub-main-footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.fro {
+  width: 50%;
+  padding: 23px 0px 0px 50px;
+}
+
+.fro-partner {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.su-logo {
+  width: 80px;
+  padding-bottom: 10px;
+}
+.music-logo {
+  margin: 15px 50px 0px 20px;
+  width: 30%;
+  height: 50%;
+}
+
+.footer-space {
+  height: 50px;
+}

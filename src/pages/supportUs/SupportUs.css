@@ -1,0 +1,89 @@
+.donate {
+  max-width: 1350px;
+  margin: 40px 40px 40px 40px;
+  background: white;
+  border: solid 1px white;
+  padding: 0px 30px 30px 30px;
+  border-radius: 10px;
+}
+
+.tp-donate {
+  width: 100%;
+}
+
+.amount-btn {
+  height: 38px;
+  width: 100%;
+}
+
+.amountDonate {
+  border-radius: 5px !important;
+  /* background: rgb(252, 226, 226) !important; */
+  width: 20%;
+}
+
+.supportus {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-attachment: fixed;
+  background-image: url("https://nyphil.org/~/media/images/newsroom/2021/photo-gallery/Jaap-van-Zweden-by-chris-lee-3-full.jpg");
+}
+
+.header-donate-h1 {
+  text-align: center;
+  margin: 30px 0px 30px 0px;
+}
+.amountDonate {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.imt-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imt-fname {
+  width: 49%;
+}
+
+.imt-lname {
+  width: 49%;
+}
+
+.total-donate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-amount {
+  width: 50%;
+  margin-top: 5px;
+}
+
+.total-amount p {
+  margin: 0;
+}
+.total-amount h2 {
+  margin-right: 10px;
+}
+
+.amount-number span {
+  font-size: small;
+}
+
+.card-donate {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-donate button {
+  margin: 15px 0% 10px 0px;
+}
+
+.red {
+  color: red;
+}
