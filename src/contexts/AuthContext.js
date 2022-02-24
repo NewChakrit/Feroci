@@ -2,6 +2,7 @@ import { createContext, useEffect, useState } from 'react';
 import axios from '../config/axios';
 import jwtDecode from 'jwt-decode';
 import { setToken, clearToken, getToken } from '../services/localStorage';
+import { useNavigate } from 'react-router-dom';
 
 const AuthContext = createContext();
 
@@ -9,6 +10,7 @@ function AuthContextProvider({ children }) {
     const [user, setUser] = useState(null);
     const [userData, setUserData] = useState('');
     const token = getToken('token');
+    const navigate = useNavigate();
 
     useEffect(() => {
         if (getToken()) {
@@ -39,6 +41,7 @@ function AuthContextProvider({ children }) {
 
     const logout = () => {
         clearToken();
+        navigate('/');
         setUser(null);
     };
 
