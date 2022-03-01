@@ -98,12 +98,11 @@ svg {
 
 .sub-main-footer {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
 }
 
 .fro {
-  width: 50%;
-  padding: 23px 0px 0px 50px;
+  text-align: center;
 }
 
 .fro-partner {
@@ -123,5 +122,5 @@ svg {
 }
 
 .footer-space {
-  height: 50px;
+  height: 20px;
 }

@@ -1,7 +1,21 @@
 import Card from "../../components/card/Card";
 import "./Home.css";
+import axios from "../../config/axios";
+import { useState, useEffect } from "react";
 
 function Home() {
+  const [event, setEvent] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("event")
+      .then((res) => {
+        setEvent(res.data.event);
+        // console.log(res);
+      })
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
     <>
       <div className="main-home">
@@ -10,7 +24,19 @@ function Home() {
           alt=""
         />
       </div>
-      <Card />
+      <h1 className="header-event">Events</h1>
+      <div className="home-card">
+        {event.map((item) => {
+          return (
+            <Card
+              key={item.id}
+              events={item}
+              setEvent={setEvent}
+              event={event}
+            />
+          );
+        })}
+      </div>
     </>
   );
 }

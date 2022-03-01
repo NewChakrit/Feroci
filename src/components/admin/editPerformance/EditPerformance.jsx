@@ -5,13 +5,14 @@ import { useNavigate } from "react-router-dom";
 import { ErrorContext } from "../../../contexts/ErrorContext";
 
 function EditPerformance() {
+  const [showEdit, setShowEdit] = useState(false);
   const [title, setTitle] = useState("");
   const [detail, setDetail] = useState("");
   const [img, setImg] = useState("");
 
   const { setError } = useContext(ErrorContext);
 
-  const navigate = useNavigate;
+  const navigate = useNavigate();
 
   const handleSubmitPerformance = async (e) => {
     e.preventDefault();
@@ -24,8 +25,8 @@ function EditPerformance() {
       });
       navigate("/performance");
     } catch (err) {
-      console.log(err.response.data.messgae);
-      setError(err.response.data.message);
+      console.log(err.messgae);
+      setError(err.message);
     }
   };
 
@@ -36,7 +37,7 @@ function EditPerformance() {
         {/* Performance Name */}
 
         <div className="mb-3">
-          <label htmlFor="performanceName" class="form-label">
+          <label htmlFor="performanceName" className="form-label">
             Performance Name
           </label>
           <input
@@ -49,27 +50,13 @@ function EditPerformance() {
           />
         </div>
 
-        {/* Perforrmance Image */}
-        <div class="mb-3">
-          <label for="performanceImg" class="form-label">
-            Performance Image
-          </label>
-          <input
-            class="form-control"
-            type="file"
-            id="performanceImg"
-            value={img}
-            onChange={(e) => setImg(e.target.value)}
-          />
-        </div>
-
         {/* Performance video */}
-        <div class="mb-3">
-          <label for="performanceLink" class="form-label">
+        <div className="mb-3">
+          <label htmlFor="performanceLink" className="form-label">
             Performance Youtube Link
           </label>
           <input
-            class="form-control"
+            className="form-control"
             type="text"
             id="performanceLink"
             value={detail}
@@ -77,7 +64,7 @@ function EditPerformance() {
           />
         </div>
 
-        <button type="submit" class="btn btn-primary">
+        <button type="submit" className="btn btn-primary">
           Submit
         </button>
       </form>

@@ -6,7 +6,7 @@ function AboutUs() {
       <div className="aboutus-main">
         <div className="aboutus-img">
           <img
-            src="https://nyphil.org/~/media/images/newsroom/1920/photo-gallery/orchestra-portrait-by-chris-lee-full.jpg"
+            src="https://res.cloudinary.com/do58tgs2e/image/upload/v1646024213/orchestra-portrait-by-chris-lee-full2_nrk0sp.jpg"
             alt=""
           />
         </div>

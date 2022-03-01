@@ -2,3 +2,15 @@
   width: 100%;
   display: block;
 }
+
+.header-event {
+  margin: 30px 0px 30px 6%;
+  color: #02a89e;
+  font-weight: 600;
+}
+
+.home-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

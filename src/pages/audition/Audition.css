@@ -13,8 +13,7 @@
 
 .audition-img1 {
   width: 700px;
-  border-radius: 10px;
-  box-shadow: 19px 18px 14px -1px rgba(54, 54, 54, 0.7);
+  box-shadow: 10px 30px 40px -20px gray;
 }
 
 .text-img1 {
@@ -48,16 +47,13 @@
   align-items: flex-start;
 }
 
-.detail-audition p {
-  margin-top: 10px;
-}
-
 .detail-audition strong {
   margin-top: 10px;
 }
 
 .detail-audition {
   margin-left: 120px;
+  margin-right: 120px;
   margin-top: 60px;
 }
 
@@ -74,4 +70,9 @@
   background: #ef5da8;
   color: white;
   box-shadow: 7px 7px 10px gray;
+}
+
+.instument-ad {
+  margin: 0;
+  padding: 0;
 }

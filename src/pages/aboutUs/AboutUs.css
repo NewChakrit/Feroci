@@ -11,12 +11,15 @@
 .aboutus-img img {
   width: 80%;
   height: 80%;
-  border-radius: 5%;
-  box-shadow: 19px 18px 14px -1px rgba(54, 54, 54, 0.7);
-  -webkit-box-shadow: 19px 18px 14px -1px rgba(54, 54, 54, 0.7);
-  -moz-box-shadow: 19px 18px 14px -1px rgba(54, 54, 54, 0.7);
+
+  box-shadow: 10px 30px 40px -20px gray;
 }
 
 .aboutus-title {
   padding-top: 20px;
+}
+
+.aboutus-h2 {
+  color: #02a89e;
+  font-weight: 600;
 }

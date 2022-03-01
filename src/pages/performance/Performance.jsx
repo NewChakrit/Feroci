@@ -23,12 +23,14 @@ function Performance() {
         <div className="title-performance">
           <div className="text-title-per">
             <h2>
-              <strong>Historic Performances</strong>
+              <strong style={{ color: "#02a89e", fontWeight: 600 }}>
+                Historic Performances
+              </strong>
             </h2>
             <p>
-              Enjoy decades of magnificent New York Philharmonic concerts
-              curated from decades of Live from Thialand Cultural Center
-              telecasts and our popular Facebook Live broadcasts.
+              Enjoy decades of magnificent Feroci Philharmonic Orchestra
+              concerts curated from decades of Live from Thialand Cultural
+              Center telecasts and our popular Facebook Live broadcasts.
             </p>
           </div>
           <div className="pic-title-per">
@@ -44,7 +46,14 @@ function Performance() {
 
         <div className="main-video-performance">
           {performance.map((item) => {
-            return <CardPerformance key={item.id} performance={item} />;
+            return (
+              <CardPerformance
+                key={item.id}
+                performances={item}
+                performance={performance}
+                setPerformance={setPerformance}
+              />
+            );
           })}
         </div>
       </div>

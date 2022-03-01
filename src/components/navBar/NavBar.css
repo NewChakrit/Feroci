@@ -13,6 +13,6 @@
   width: 20%;
 }
 
-#navbar {
-  overflow: hidden;
+.navbar-expand-lg {
+  position: fixed;
 }

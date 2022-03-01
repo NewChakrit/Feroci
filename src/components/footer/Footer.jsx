@@ -72,18 +72,6 @@ function Footer() {
       </div>
       <div className="sub-main-footer">
         <div className="fro">FROCI PHILHARMONIC ORCHESTRA © 2022</div>
-        <div className="fro-partner">
-          <img
-            className="su-logo"
-            src="https://upload.wikimedia.org/wikipedia/th/thumb/7/77/Silpakorn_University_Emblem.svg/1200px-Silpakorn_University_Emblem.svg.png"
-            alt=""
-          />
-          <img
-            className="music-logo"
-            src="https://res.cloudinary.com/do58tgs2e/image/upload/v1644978597/music_logo_zdrfh2.jpg"
-            alt=""
-          />
-        </div>
       </div>
       <div className="footer-space"></div>
     </>

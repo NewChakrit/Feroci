@@ -13,7 +13,7 @@ function Register() {
 
   const { setError } = useContext(ErrorContext);
 
-  const navigate = useNavigate;
+  const navigate = useNavigate();
 
   const handleSubmitRegister = async (e) => {
     e.preventDefault();

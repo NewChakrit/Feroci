@@ -14,25 +14,35 @@ function EditEvent() {
 
   const { setError } = useContext(ErrorContext);
 
-  const navigate = useNavigate;
+  const navigate = useNavigate();
 
   const handleSubmitEvent = async (e) => {
     e.preventDefault();
     try {
-      setError("");
-      const res = await axios.post("/event", {
-        title,
-        img,
-        date,
-        time,
-        location,
-        detail,
-      });
-      navigate("/event");
+      const formData = new FormData();
+      formData.append("img", img);
+      formData.append("title", title);
+      formData.append("date", date);
+      formData.append("time", time);
+      formData.append("location", location);
+      formData.append("detail", detail);
+
+      await axios.post("/event", formData);
+      navigate("/");
     } catch (err) {
-      console.log(err.response.data.messgae);
-      setError(err.response.data.message);
+      console.log(err.messgae);
+      setError(err.message);
+    } finally {
+      setTitle("");
+      setImg("");
+      setDate("");
+      setTime("");
+      setLocation("");
+      setDetail("");
     }
+  };
+  const handleFileUpload = (e) => {
+    setImg(e.target.files[0]);
   };
 
   return (
@@ -42,7 +52,7 @@ function EditEvent() {
 
         {/* Event Name */}
         <div className="mb-3">
-          <label htmlFor="eventName" class="form-label">
+          <label htmlFor="eventName" className="form-label">
             Event Name
           </label>
           <input
@@ -56,22 +66,22 @@ function EditEvent() {
         </div>
 
         {/* Event Image */}
-        <div class="mb-3">
-          <label for="eventImg" class="form-label">
+        <div className="mb-3">
+          <label for="eventImg" className="form-label">
             Event Image
           </label>
           <input
-            class="form-control"
+            className="form-control"
             type="file"
             id="eventImg"
-            value={img}
-            onChange={(e) => setImg(e.target.value)}
+            // value={img}
+            onChange={handleFileUpload}
           />
         </div>
 
         {/* Event Date */}
         <div className="mb-3">
-          <label htmlFor="eventDate" class="form-label">
+          <label htmlFor="eventDate" className="form-label">
             Date
           </label>
           <input
@@ -86,7 +96,7 @@ function EditEvent() {
 
         {/* Event Time */}
         <div className="mb-3">
-          <label htmlFor="eventTime" class="form-label">
+          <label htmlFor="eventTime" className="form-label">
             Time
           </label>
           <input
@@ -101,7 +111,7 @@ function EditEvent() {
 
         {/* Event Location */}
         <div className="mb-3">
-          <label htmlFor="eventLocation" class="form-label">
+          <label htmlFor="eventLocation" className="form-label">
             Location
           </label>
           <input
@@ -115,8 +125,8 @@ function EditEvent() {
         </div>
 
         {/* Event Details */}
-        <div class="mb-3">
-          <label htmlFor="eventDetails" class="form-label">
+        <div className="mb-3">
+          <label htmlFor="eventDetails" className="form-label">
             Event Details
           </label>
           <textarea
@@ -129,7 +139,7 @@ function EditEvent() {
         </div>
 
         <br />
-        <button type="submit" class="btn btn-primary">
+        <button type="submit" className="btn btn-primary">
           Submit
         </button>
       </form>

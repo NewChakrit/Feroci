@@ -3,19 +3,34 @@
 }
 
 .custom-select {
-  width: 95%;
-  background-color: rgb(245, 238, 238);
+  width: 556px;
+  background-color: rgb(255, 255, 255);
+}
+
+.container-audition-form {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-attachment: fixed;
+  background-image: url("https://res.cloudinary.com/do58tgs2e/image/upload/v1646022353/dgh-house-right_jtdmbp.jpg");
 }
 
 .main-audition-form {
-  margin: 3%;
-  padding: 2%;
+  margin: 0% 20%;
+  padding: 3% 5%;
   border: 1px solid white;
   border-radius: 10px;
+
+  background: white;
 }
 
 .main-audition-form h2 {
   text-align: center;
+  color: #02a89e;
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 
 .option-instrument {
